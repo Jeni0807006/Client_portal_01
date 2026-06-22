@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        rgba(3,10,20,0.55),
+        rgba(3,10,20,0.55)
+    ),
+    url('../assets/images/login-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+}
+
+
+.login-container{
+    width:100%;
+    max-width:450px;
+    padding:20px;
+}
+
+.company-brand{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.company-logo{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    margin-right:15px;
+}
+
+.company-text h1{
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:2px;
+    background: linear-gradient(135deg, #fff, #9bb4d8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.company-text p{
+    font-size:11px;
+    letter-spacing:2px;
+    color:#9bb4d8;
+}
+
+.login-box{
+    background:rgba(8, 18, 35, 0.65); 
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+.login-box h2{
+    text-align:center;
+    font-size:26px;
+    margin-bottom:8px;
+}
+
+.login-box p{
+    text-align:center;
+    color:#a7b7d8;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+/* Error Message Styling */
+.error-msg {
+    background: rgba(255, 75, 75, 0.15);
+    border: 1px solid #ff4b4b;
+    color: #ff8585;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    color:#dce7ff;
+    font-size:14px;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:#111d34;
+    color:#fff;
+    border:1px solid #22395f;
+    transition: 0.3s;
+}
+
+.input-group input:focus{
+    border-color:#00bfff;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg, #008cff, #00bfff);
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom: 10px;
+}
+
+.login-btn:hover{
+    transform:translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 140, 255, 0.4);
+}
+
+/* Guest Divider & Button Styling */
+.guest-divider {
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+}
+.guest-divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+}
+.guest-divider::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+}
+.guest-divider span {
+    color: #a7b7d8;
+    font-size: 14px;
+}
+
+.guest-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #22395f;
+    border-radius: 10px;
+    background: transparent;
+    color: #00bfff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.guest-btn:hover {
+    background: rgba(0, 191, 255, 0.1);
+    border-color: #00bfff;
+}
+
+.footer-link{
+    margin-top:15px;
+    text-align: center;
+    font-size:14px;
+    color: #a7b7d8;
+}
+
+.footer-link a{
+    text-decoration:none;
+    color:#00bfff;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.footer-link a:hover {
+    text-decoration: underline;
+}

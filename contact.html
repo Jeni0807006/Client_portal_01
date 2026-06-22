@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Altraz Intelligence</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <nav class="navbar">
+
+      <div class="login-container">
+
+   <div class="company-brand">
+
+    <img src="images/logo.png"
+         alt="ALT2TRAZ Logo"
+         class="company-logo">
+
+    <div class="company-text">
+        <h1>ALT2TRAZ</h1>
+        <p>INTELLIGENCE PVT LTD</p>
+    </div>
+
+</div>
+</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+
+    </nav>
+  </header>
+
+
+  <!-- ================= PAGE BANNER =================
+       BACKGROUND IMAGE → assets/images/background4.jpg
+       Drop your image there (or change the path in style.css → .contact-banner)
+  ================================================ -->
+  <section class="page-banner contact-banner">
+    <div class="banner-content">
+      <h1>Contact Us</h1>
+      <p>Get in touch with our team and let's build something amazing together.</p>
+    </div>
+  </section>
+
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+
+        <h2>Get In Touch</h2>
+        <p>Have questions or need a quote? Reach out to us and our team will get back to you as soon as possible.</p>
+
+        <div class="info-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Our Location</h4>
+            <p>No. 3-13B/21, DJ Complex (1st &amp; 2nd Floor),
+              Eraviputhoorkadai, Kattathurai,
+              Marthandam, Kanyakumari District,
+              Tamil Nadu &ndash; 629158</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <h4>Phone Number</h4>
+            <p>+91 90772 88421</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email Address</h4>
+            <p>alttraz.hr@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <h4>Business Hours</h4>
+            <p>Monday &ndash; Saturday: 9:00 AM &ndash; 6:00 PM</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+
+        <input type="text"    id="name"    placeholder="Your Full Name"  required>
+        <input type="email"   id="email"   placeholder="Your Email Address" required>
+        <input type="text"    id="subject" placeholder="Subject">
+        <textarea id="message" rows="6"   placeholder="Your Message" required></textarea>
+
+        <button type="button" class="primary-btn" onclick="handleSubmit()">
+          Send Message &nbsp;<i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+        <p id="form-msg" style="margin-top:1rem;font-size:0.9rem;color:var(--cyan);display:none;">
+          &#10003; Thank you! Your message has been sent. We'll be in touch soon.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= MAP SECTION ================= -->
+  <section class="map-section">
+    <div class="map-box">
+      <h2><i class="fa-solid fa-map-pin" style="color:var(--blue);margin-right:10px"></i>Our Location</h2>
+      <p>DJ Complex, Marthandam, Kanyakumari District, Tamil Nadu &ndash; 629158</p>
+      <p style="margin-top:0.5rem;font-size:0.85rem;">
+        <a href="https://maps.google.com/?q=Marthandam,Kanyakumari" target="_blank"
+           style="color:var(--blue);text-decoration:underline">
+          Open in Google Maps &rarr;
+        </a>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ================= CTA SECTION ================= -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Let's Build Something Amazing Together</h2>
+      <p>Contact Altraz Intelligence for innovative technology solutions.</p>
+    </div>
+    <button class="primary-btn" onclick="document.getElementById('name').focus(); window.scrollTo({top: 500, behavior:'smooth'})">
+      Get Started &nbsp;<i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-box">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Logo">
+          <h2>ALT2TRAZ Intelligence</h2>
+        </div>
+        <p>We provide innovative digital solutions to help businesses grow and succeed in the digital world.</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Services</h3>
+        <a href="service.html">Web Development</a>
+        <a href="service.html">AI Solutions</a>
+        <a href="service.html">Cloud Services</a>
+        <a href="service.html">Digital Marketing</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-envelope" style="color:var(--blue);margin-right:6px"></i> alttraz.hr@gmail.com</p>
+        <p><i class="fa-solid fa-phone" style="color:var(--blue);margin-right:6px"></i> +91 90772 88421</p>
+        <p><i class="fa-solid fa-location-dot" style="color:var(--blue);margin-right:6px"></i> DJ Complex, Marthandam, Kanyakumari Dt, TN - 629158</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2026 Altraz Intelligence Pvt Ltd &mdash; All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    // Hamburger menu
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks   = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+    // Simple form submission feedback
+    function handleSubmit() {
+      const name    = document.getElementById('name').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const msg     = document.getElementById('form-msg');
+
+      if (!name || !email || !message) {
+        alert('Please fill in your name, email, and message before sending.');
+        return;
+      }
+
+      msg.style.display = 'block';
+
+      // Clear fields
+      document.getElementById('name').value    = '';
+      document.getElementById('email').value   = '';
+      document.getElementById('subject').value = '';
+      document.getElementById('message').value = '';
+
+      // Hide confirmation after 5 seconds
+      setTimeout(() => { msg.style.display = 'none'; }, 5000);
+    }
+  </script>
+
+</body>
+</html>

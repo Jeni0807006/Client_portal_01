@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Altraz Intelligence</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+ <header>
+  <nav class="navbar">
+
+    <div class="login-container">
+      <div class="company-brand">
+        <img src="images/logo.png" alt="ALT2TRAZ Logo" class="company-logo">
+        <div class="company-text">
+          <h1>ALT2TRAZ</h1>
+          <p>INTELLIGENCE PVT LTD</p>
+        </div>
+      </div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="#" class="login-btn" id="openModal">Log In</a>
+
+    <div class="menu-toggle" id="menuToggle">
+      &#9776;
+    </div>
+
+  </nav>
+</header>
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2 id="modalTitle">Account Login</h2>
+    
+    <form id="loginForm" style="margin-bottom: 15px;">
+      <input type="email" id="loginEmail" placeholder="Email Address" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit" class="modal-login-btn">Login</button>
+    </form>
+
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+      <a href="signup.html" class="popup-btn" id="signupModalBtn">Create Account</a>
+      <a href="#" class="popup-btn guest-btn" id="guestModalBtn" style="background: transparent; border: 1px solid rgba(255,255,255,0.3); color: #fff;">Access as Guest</a>
+      <a href="#" class="popup-btn logout-btn" id="logoutBtn" style="display: none;">Logout</a>
+    </div>
+  </div>
+</div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>The Future of<br>Digital Excellence</h1>
+      <p>
+        We deliver innovative technology solutions — modern web development,
+        cloud infrastructure, and AI-driven strategies that help businesses
+        grow faster and smarter.
+      </p>
+      <div class="hero-buttons">
+        <button class="primary-btn" onclick="window.location.href='contact.html'">
+          Get Started &nbsp;<i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="secondary-btn" onclick="window.location.href='about.html'">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="section-title">
+      <h4>Our Services</h4>
+      <h2>What We Offer</h2>
+    </div>
+    <div class="services-container">
+      <div class="service-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites built for performance and growth.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-brain"></i>
+        <h3>AI Solutions</h3>
+        <p>Smart automation and AI-powered tools for smarter operations.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-cloud"></i>
+        <h3>Cloud Services</h3>
+        <p>Secure, scalable cloud infrastructure for your business.</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Digital Marketing</h3>
+        <p>Growth-focused strategies that expand your digital reach.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose">
+    <div class="why-right">
+      <img src="images/team4.jpg" alt="Our Expert Team">
+    </div>
+    <div class="why-left">
+      <div class="section-title">
+        <h5>Why Choose Us</h5>
+        <h2>Built for Your Success</h2>
+      </div>
+      <div class="feature-box">
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <div class="text">
+          <h3>Quality Service</h3>
+          <p>Reliable, high-quality digital solutions tailored precisely to your business needs.</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="icon"><i class="fas fa-tag"></i></div>
+        <div class="text">
+          <h3>Affordable Pricing</h3>
+          <p>Premium quality at competitive, budget-friendly rates with no hidden costs.</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="icon"><i class="fas fa-headset"></i></div>
+        <div class="text">
+          <h3>24/7 Support</h3>
+          <p>Our dedicated team is always available to assist you around the clock.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="section-title">
+      <h4>Testimonials</h4>
+      <h2>Trusted by Businesses Worldwide</h2>
+    </div>
+    <div class="testimonial-wrapper">
+      <div class="testimonial-box">
+        <img src="images/client1.png" alt="Client Sanju">
+        <i class="fa-solid fa-quote-left"></i>
+        <h4>Sanju</h4>
+        <span>UI/UX Designer</span>
+        <p>Altraz Intelligence transformed our digital presence with a modern, highly responsive website. Their professionalism exceeded every expectation.</p>
+        <h3>&#9733;&#9733;&#9733;&#9733;&#9733;</h3>
+      </div>
+      <div class="testimonial-box">
+        <img src="images/client2.png" alt="Client Jeni">
+        <i class="fa-solid fa-quote-left"></i>
+        <h4>Jeni</h4>
+        <span>Project Manager</span>
+        <p>Outstanding support and innovative solutions. The team delivered quality results on time and well within budget. Highly recommended!</p>
+        <h3>&#9733;&#9733;&#9733;&#9733;&#9733;</h3>
+      </div>
+      <div class="testimonial-box">
+        <img src="images/client3.png" alt="Client Nicku">
+        <i class="fa-solid fa-quote-left"></i>
+        <h4>Nicku</h4>
+        <span>Software Engineer</span>
+        <p>A trusted technology partner that helped us grow through AI, cloud, and web development — exactly what our business needed.</p>
+        <h3>&#9733;&#9733;&#9733;&#9733;&#9733;</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Ready to Grow Your Business?</h2>
+      <p>Let's build innovative digital solutions together.</p>
+    </div>
+    <button class="primary-btn" onclick="window.location.href='contact.html'">
+      Contact Us &nbsp;<i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-box company-info">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Logo">
+          <h2>ALT2TRAZ Intelligence</h2>
+        </div>
+        <p>We provide innovative digital solutions to help businesses grow and succeed in the digital world.</p>
+      </div>
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-box">
+        <h3>Services</h3>
+        <a href="service.html">Web Development</a>
+        <a href="service.html">AI Solutions</a>
+        <a href="service.html">Cloud Services</a>
+        <a href="service.html">Digital Marketing</a>
+      </div>
+      <div class="footer-box">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-envelope" style="color:var(--blue);margin-right:6px"></i> alttraz.hr@gmail.com</p>
+        <p><i class="fa-solid fa-phone" style="color:var(--blue);margin-right:6px"></i> +91 90772 88421</p>
+        <p><i class="fa-solid fa-location-dot" style="color:var(--blue);margin-right:6px"></i> DJ Complex, Marthandam, Kanyakumari Dt, TN - 629158</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 Altraz Intelligence Pvt Ltd &mdash; All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Responsive Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks   = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+    // Modal Control Setup Elements
+    const modal = document.getElementById("loginModal");
+    const openBtn = document.getElementById("openModal");
+    const closeBtn = document.getElementById("closeModal");
+    const logoutBtn = document.getElementById("logoutBtn");
+    const loginForm = document.getElementById("loginForm");
+    const signupModalBtn = document.getElementById("signupModalBtn");
+    const guestModalBtn = document.getElementById("guestModalBtn");
+    const modalTitle = document.getElementById("modalTitle");
+
+    // Dynamic Auth Check Function
+    function updateNavbarAuthState() {
+        const token = localStorage.getItem('token');
+        if (token) {
+            // Logged in (User or Guest) -> Change button to Dashboard
+            openBtn.innerText = "Dashboard";
+            openBtn.style.background = "var(--blue, #007bff)";
+            
+            // Modal rules inside popup
+            modalTitle.innerText = "Account Action";
+            loginForm.style.display = "none";
+            signupModalBtn.style.display = "none";
+            guestModalBtn.style.display = "none";
+            logoutBtn.style.display = "block";
+        } else {
+            // Not Logged in -> Show normal Log In
+            openBtn.innerText = "Log In";
+            openBtn.style.background = "";
+            
+            modalTitle.innerText = "Account Login";
+            loginForm.style.display = "block";
+            signupModalBtn.style.display = "block";
+            guestModalBtn.style.display = "block";
+            logoutBtn.style.display = "none";
+        }
+    }
+
+    // Run layout check on startup
+    updateNavbarAuthState();
+
+    openBtn.addEventListener("click", function(e){
+        e.preventDefault();
+        const token = localStorage.getItem('token');
+        if(token) {
+            // Already logged in ah irundha direct dashboard redirect
+            window.location.href = "dashboard.html";
+        } else {
+            // Illana open modal popup
+            modal.style.display = "flex";
+        }
+    });
+
+    closeBtn.addEventListener("click", function(){
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(e){
+        if(e.target === modal){
+            modal.style.display = "none";
+        }
+    });
+
+    // GUEST MODE LOGIN SELECTION ACTION
+    guestModalBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        localStorage.setItem('token', 'guest'); // Storing custom guest token
+        alert('Logged in as Guest!');
+        modal.style.display = "none";
+        updateNavbarAuthState(); // Triggers UI swap instantly
+        window.location.href = 'dashboard.html';
+    });
+
+    // BACKEND LOGIN INTEGRATION ROUTE
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const email = document.getElementById('loginEmail').value.trim();
+        const password = document.getElementById('loginPassword').value;
+
+        try {
+            const response = await fetch('http://localhost:5000/api/auth/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, password })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert('Login Successful!');
+                localStorage.setItem('token', data.token); 
+                modal.style.display = "none";
+                updateNavbarAuthState(); 
+                window.location.href = 'dashboard.html'; 
+            } else {
+                alert(data.message || 'Login details matching error!');
+            }
+        } catch (err) {
+            console.error('Error during modal login:', err);
+            alert('Server is down! Connect server first.');
+        }
+    });
+
+    // LOGOUT TRIGGER ACTION
+    logoutBtn.addEventListener("click", function(e){
+        e.preventDefault();
+        localStorage.removeItem('token'); // Clears user/guest session
+        alert("Logged Out Successfully");
+        modal.style.display = "none";
+        updateNavbarAuthState();
+        window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

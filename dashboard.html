@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Client Portal | ALT2TRAZ INTELLIGENCE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <div class="company-brand">
+            <img src="assets/images/logo.png" alt="ALT2TRAZ Logo" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="logo-circle-fallback" style="display:none;">A2T</div>
+            
+            <div class="company-text">
+                <h1>ALT2TRAZ</h1>
+                <p>INTELLIGENCE PVT LTD</p>
+            </div>
+        </div>
+
+        <div class="user-profile">
+            <span id="welcomeUser">
+                <i class="fa-solid fa-circle-user"></i> 
+                Welcome, <span id="usernameTab">User</span>
+            </span>
+            <button id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </button>
+        </div>
+    </header>
+
+    <div class="dashboard-wrapper">
+        
+        <aside class="sidebar">
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item active" id="menuAll">
+                    <i class="fa-solid fa-chart-pie"></i> 
+                    <span>All Reports</span>
+                </a>
+                <a href="#" class="menu-item" id="menuSaved">
+                    <i class="fa-solid fa-bookmark"></i> 
+                    <span>Saved Reports</span> 
+                    <span class="badge" id="savedCount">0</span>
+                </a>
+                <a href="#" class="menu-item" id="menuProfile">
+                    <i class="fa-solid fa-user-gear"></i> 
+                    <span>User Profile</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>&copy; 2026 ALT2TRAZ</p>
+                <p>v1.0.0 Enterprise</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <section class="hero-section">
+                <h1>SaaS Intelligence <span>Portal</span></h1>
+                <p>Real-time enterprise analytics, core operational metrics, and predictive strategy monitoring dashboard.</p>
+            </section>
+
+            <section class="metrics-grid">
+                <div class="metric-card glow-blue">
+                    <div class="metric-header">
+                        <h4>PLATFORM STATUS</h4>
+                        <i class="fa-solid fa-circle-check status-online"></i>
+                    </div>
+                    <h2>99.95% <span>Uptime</span></h2>
+                    <p>Global infrastructure status live monitoring</p>
+                </div>
+                
+                <div class="metric-card glow-cyan">
+                    <div class="metric-header">
+                        <h4>SAVED CORES</h4>
+                        <i class="fa-solid fa-bookmark text-cyan"></i>
+                    </div>
+                    <h2><span id="metricSavedCount">0</span> <span>Items</span></h2>
+                    <p>Total reports bookmarked by you</p>
+                </div>
+                
+                <div class="metric-card glow-purple">
+                    <div class="metric-header">
+                        <h4>CURRENT ZONE</h4>
+                        <i class="fa-solid fa-globe text-purple"></i>
+                    </div>
+                    <h2>APAC <span>Region</span></h2>
+                    <p>Primary secure data gateway cluster</p>
+                </div>
+            </section>
+
+            <div class="search-filter-wrapper">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Search report metrics, titles, metadata...">
+                </div>
+                <div id="filterContainer" class="filter-container">
+                    <button class="filter-btn active" data-category="All">All</button>
+                    <button class="filter-btn" data-category="Finance">Finance</button>
+                    <button class="filter-btn" data-category="Operations">Operations</button>
+                    <button class="filter-btn" data-category="Strategy">Strategy</button>
+                    <button class="filter-btn" data-category="Research">Research</button>
+                    <button class="filter-btn" data-category="Intelligence">Intelligence</button>
+                </div>
+            </div>
+
+            <section class="content-block">
+                <div class="block-header">
+                    <h3><i class="fa-solid fa-folder-open"></i> Enterprise Intelligence Records</h3>
+                    <span class="badge" id="reportResultCount">10 Reports Loaded</span>
+                </div>
+
+                <div class="cards-grid" id="reportsGrid">
+                    
+                    <div class="work-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>Q1 Financial Performance</h3>
+                        <div class="card-category">Category: Finance</div>
+                        <p>Comprehensive review of revenue growth, profit margins, and customer acquisition cost (CAC) for the first quarter.</p>
+                        
+    <div class="card-footer">
+        <span class="card-metric">$1.2M ARR</span>
+        <a href="#" class="card-link save-btn">
+        <i class="fa-regular fa-bookmark"></i> Save
+        </a>
+    </div>
+                    </div>
+
+                </div>
+            </section>
+<div id="profileModal"
+     style="display:none;
+            position:fixed;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            background:#162542;
+            padding:25px;
+            border-radius:12px;
+            z-index:9999;
+            min-width:300px;">
+
+    <h2>User Profile</h2>
+
+    <p>
+        <strong>Username:</strong>
+        <span id="profileUsername">-</span>
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        <span id="profileEmail">-</span>
+    </p>
+
+    <button id="closeProfile">
+        Close
+    </button>
+
+</div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

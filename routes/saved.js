@@ -19,7 +19,7 @@ router.get('/', authMiddleware, async (req, res) => {
     }
 });
 
-// 2. ஒரு புதிய அறிக்கையைச் சேமிக்க (POST /api/saved)
+
 router.post('/', authMiddleware, async (req, res) => {
     try {
         const { reportId } = req.body;
@@ -34,7 +34,7 @@ router.post('/', authMiddleware, async (req, res) => {
     }
 });
 
-// 3. ஒரு குறிப்பிட்ட அறிக்கையைச் சேமித்த பட்டியலிலிருந்து நீக்க (DELETE /api/saved/:id)
+
 router.delete('/:id', authMiddleware, async (req, res) => {
     try {
         await db.query(
